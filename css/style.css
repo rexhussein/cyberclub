@@ -1258,6 +1258,7 @@ pre code {
   .col-lg-6 {
     flex: 0 0 50%;
     max-width: 50%;
+
   }
   .col-lg-7 {
     flex: 0 0 58.33333%;
@@ -9953,3 +9954,4 @@ h6,
   padding: 0;
   list-style-type: none;
 }
+
