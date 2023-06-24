@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="utf-8">
     <title>CYBER CLUB</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -24,6 +25,45 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+
+    <style>
+        .loggo{
+        height: 150px;
+        margin-top: 0px;
+        margin-left: -50px;
+        }
+    </style>
+
+
+    <!-- Start of Async Drift Code -->
+<script>
+"use strict";
+
+!function() {
+  var t = window.driftt = window.drift = window.driftt || [];
+  if (!t.init) {
+    if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+    t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
+    t.factory = function(e) {
+      return function() {
+        var n = Array.prototype.slice.call(arguments);
+        return n.unshift(e), t.push(n), t;
+      };
+    }, t.methods.forEach(function(e) {
+      t[e] = t.factory(e);
+    }), t.load = function(t) {
+      var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+      var i = document.getElementsByTagName("script")[0];
+      i.parentNode.insertBefore(o, i);
+    };
+  }
+}();
+drift.SNIPPET_VERSION = '0.3.1';
+drift.load('cegwxuf3x3zu');
+</script>
+<!-- End of Async Drift Code -->
 </head>
 
 <body>
@@ -31,7 +71,8 @@
     <div class="container-fluid bg-white position-relative">
         <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0">
             <a href="index.html" class="navbar-brand text-secondary">
-                <h1 class="display-4 text-uppercase">CYBER CLUB</h1>
+
+                <img class="loggo" src="img/logo.png">
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -39,10 +80,10 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ml-auto py-0 pr-3 border-right">
                     <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="index.html" class="nav-item nav-link">About</a>
-                    <a href="index.html" class="nav-item nav-link">Services</a>
-                    <a href="index.html" class="nav-item nav-link">Prices</a>
-                    <a href="index.html" class="nav-item nav-link">Projects</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="service.html" class="nav-item nav-link">Services</a>
+                    <a href="price.html" class="nav-item nav-link">Prices</a>
+                    <a href="project.html" class="nav-item nav-link">Projects</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
                         <div class="dropdown-menu rounded-0 m-0">
@@ -50,7 +91,7 @@
                             <a href="testimonial.html" class="dropdown-item">Testimonials</a>
                         </div>
                     </div>
-                    <a href="index.html" class="nav-item nav-link">Contact</a>
+                    <a href="col-lg-6" class="nav-item nav-link">Contact</a>
                 </div>
                 <div class="d-none d-lg-flex align-items-center pl-4">
                     <i class="fa fa-2x fa-mobile-alt text-primary mr-3"></i>
@@ -69,10 +110,10 @@
     <div class="container-fluid bg-primary py-5 px-0" style="margin-bottom: 90px;">
         <div class="row mx-0 align-items-center">
             <div class="col-lg-6 px-md-5 text-center text-lg-left">
-                <h1 class="display-2 text-uppercase mb-3">Best Websites Developers Around
+                <h1 class="display-2 text-uppercase mb-3">Best Website Developers Around
                 </h1>
                 <p class="text-dark mb-4">Cyber Club is a digital agency club founded in the year 2023 by Revenge Maluleke, it's main objective remains providing business owners with digital marketing solutions together with branding. </p>
-                <a href="" class="btn btn-dark text-uppercase mt-1 py-3 px-5">Learn More</a>
+                <a href="contact.html" class="btn btn-dark text-uppercase mt-1 py-3 px-5">Get a quote</a>
             </div>
             <div class="col-lg-6 px-0 text-right">
                 <img class="img-fluid mt-5 mt-lg-0" src="img/header.png" alt="">
@@ -272,7 +313,7 @@
                             <p>Google Business</p>
                             <p>Google Ads</p>
                             <p>Web Maintenance</p>
-                            <a href="" class="btn btn-primary text-uppercase py-2 px-4 my-3">Order Now</a>
+                            <a href="https://wa.link/k7401d" class="btn btn-primary text-uppercase py-2 px-4 my-3">Order Now</a>
                         </div>
                     </div>
                 </div>
@@ -356,10 +397,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="bg-light text-center p-4">
+                    <!-- <div class="bg-light text-center p-4">
                         <h4 class="text-uppercase">position available</h4>
                         <p class="m-0">Developer</p>
-                    </div>
+                    </div> -->
+
                 </div>
                 <div class="team-item rounded overflow-hidden">
                     <div class="position-relative">
@@ -428,6 +470,7 @@
 
 
                     <form name="sentMessage" id="contactForm" novalidate="novalidate">
+
                         <div class="form-row">
                             <div class="col-md-6">
                                 <div class="control-group">
@@ -484,17 +527,17 @@
                 <p>With us you are number one, no place and customer is too far to reach</p>
                 <p><i class="fa fa-map-marker-alt text-white mr-2"></i>137, Davhana Balanganani Village</p>
                 <p><i class="fa fa-phone-alt text-white mr-2"></i>+27 64 664 2751</p>
-                <p><i class="fa fa-envelope text-white mr-2"></i>Cyberblub@gmail.com</p>
+                <p><i class="fa fa-envelope text-white mr-2"></i>Cyberblubdigital@gmail.com</p>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
                 <h4 class="text-uppercase text-white mb-4">Quick Links</h4>
                 <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Home</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>About Us</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Our Services</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Pricing Plan</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Meet Our Creatives</a>
-                    <a class="text-white-50" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Contact Us</a>
+                    <a class="text-white-50 mb-2" href="index.html"><i class="fa fa-angle-right text-white mr-2"></i>Home</a>
+                    <a class="text-white-50 mb-2" href="about.html"><i class="fa fa-angle-right text-white mr-2"></i>About Us</a>
+                    <a class="text-white-50 mb-2" href="service"><i class="fa fa-angle-right text-white mr-2"></i>Our Services</a>
+                    <a class="text-white-50 mb-2" href="price.html"><i class="fa fa-angle-right text-white mr-2"></i>Pricing Plan</a>
+                    <a class="text-white-50 mb-2" href="team.html"><i class="fa fa-angle-right text-white mr-2"></i>Meet Our Creatives</a>
+                    <a class="text-white-50" href="contact.html"><i class="fa fa-angle-right text-white mr-2"></i>Contact Us</a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
@@ -513,7 +556,7 @@
         </div>
     </div>
     <div class="container-fluid py-4 px-sm-3 px-md-5" style="background: #111111;">
-        <p class="mb-2 text-center text-white-50">&copy; <a href="#">Cyber Club</a>. All Rights Reserved.</p>
+        <p class="mb-2 text-center text-white-50">&copy; <a href="index.html">Cyber Club</a>. All Rights Reserved.</p>
         <p class="m-0 text-center text-white-50">Designed by <a href="index.html">Cyber Club</a></p>
     </div>
     <!-- Footer End -->
@@ -551,6 +594,8 @@
       .catch(error => console.error('Error!', error.message))
   })
 </script>
+
+
 
 </body>
 
